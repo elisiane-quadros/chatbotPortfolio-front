@@ -1,47 +1,44 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const ChatBotContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: #262B4A;
+  background-color: #262b4a;
   border-radius: 20px;
-  width: 100%; 
+  width: 100%;
   max-width: 700px;
   padding: 1rem;
-
-  
 `;
 
 export const ChatMessageArea = styled.div`
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   max-width: 100%;
-  max-height: 650px;  
+  max-height: 650px;
   overflow-y: auto;
 
-   &::-webkit-scrollbar {
-    width: 10px; 
+  &::-webkit-scrollbar {
+    width: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #3c4473; 
-    border-radius: 5px; 
+    background: #3c4473;
+    border-radius: 5px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #5c63a8; 
+    background: #5c63a8;
   }
 
   &::-webkit-scrollbar-track {
-    background: #262b4a; 
+    background: #262b4a;
   }
-
 `;
 
 interface MessageProps {
-  sender: "user" | "bot";
+  sender: 'user' | 'bot';
 }
 
 export const MessageArea = styled.div<MessageProps>`
@@ -51,22 +48,20 @@ export const MessageArea = styled.div<MessageProps>`
   padding: 10px;
   border-radius: 10px;
   ${({ sender }) =>
-    sender === "user"
+    sender === 'user'
       ? css`
           align-self: flex-end;
-          background-color: #3C4473;
-          font-family: 'Montserrat', sans-serif; 
+          background-color: #3c4473;
+          font-family: 'Montserrat', sans-serif;
           color: white;
         `
       : css`
           align-self: flex-start;
           background-color: #262b4a;
-          font-family: 'Poppins', sans-serif; 
+          font-family: 'Poppins', sans-serif;
           color: #ccc;
         `}
- 
 `;
-
 
 export const ButtonsNav = styled.div`
   display: flex;
@@ -88,11 +83,7 @@ export const Button = styled.button`
   transition: ease.3s;
 
   &:hover {
-    color: #00FFEA;
-    box-shadow: 1px 1px 6px 2px #00FFEA;
-
+    color: #00ffea;
+    box-shadow: 1px 1px 6px 2px #00ffea;
   }
 `;
-
-
-

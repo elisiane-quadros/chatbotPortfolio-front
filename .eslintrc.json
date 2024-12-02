@@ -1,7 +1,16 @@
 {
+  "parser": "@typescript-eslint/parser",
   "extends": [
-    "next/core-web-vitals",
-    "next/typescript",
-    "plugin:prettier/recommended"
-  ]
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended" // Certifique-se de que esta linha está aqui
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    // Regras personalizadas, se necessário
+  }
 }

@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true, // Formatar o código automaticamente ao salvar
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Usar o Prettier como formatador
+    "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"], // Validar arquivos JavaScript/TypeScript com ESLint
+    "eslint.autoFixOnSave": true, // Corrigir automaticamente os erros do ESLint ao salvar
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true // Corrigir problemas automaticamente com o ESLint ao salvar
+    },
+    "prettier.requireConfig": true // Garantir que o Prettier só seja usado se houver um arquivo de configuração
+  }
+  
