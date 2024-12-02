@@ -33,14 +33,16 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 300px;
-height: 300px;
-border-radius: 30px;
+width: 330px;
+height: 280px;
+border-radius: 12px;
 background-color: #262b4a;
 padding: 1rem;
 
 `
 export const ImageCard = styled(Image)`
-border-radius: 30px;
+border-radius: 12px;
+width: 306px;
+height: 156px;
 `
 

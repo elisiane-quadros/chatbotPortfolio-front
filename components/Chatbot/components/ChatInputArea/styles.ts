@@ -27,16 +27,16 @@ export const ChatInput = styled.input`
 
 export const SendButton = styled.button`
   padding: 5px;
-  border: 1px solid #00FFEA ;
   border-radius: 50%;
-  background-color: transparent;
-  color: white;
+  border: #202540;
+  background-color:#00FFEA ;
+  color:  #202540 ;
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
     background-color: #00FFEA;
     box-shadow: 1px 1px 6px 2px #40B8BD;
-    color:  #202540 ;
+    
   }
 `;
