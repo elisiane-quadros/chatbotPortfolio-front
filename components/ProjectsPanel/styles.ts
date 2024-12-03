@@ -1,32 +1,30 @@
 import styled from 'styled-components';
-import Image from 'next/image'
-
+import Image from 'next/image';
 
 export const ProjectsArea = styled.div`
-display: flex;
-flex-direction: column;
-gap: 2rem;
-
-`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
 
 export const ProjectsMenu = styled.div`
   display: flex;
   gap: 2rem;
   & a {
     text-decoration: none;
-     font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #40b8bd;
   }
-`
+`;
 
 export const PanelCardsContainer = styled.div`
-display: grid;
-justify-items: center;
-align-content: space-evenly;
-grid-template-columns: repeat(3, 1fr);
-gap: 1rem;
-`
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+`;
 
 export const PreojectCard = styled.div`
 display: flex;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ChatInputContainer = styled.div`
   display: flex;
@@ -20,8 +20,8 @@ export const ChatInput = styled.input`
   outline: none;
 
   &::placeholder {
-    color: #7F728F;
-    font-family:'Montserrat', sans-serif; 
+    color: #7f728f;
+    font-family: 'Montserrat', sans-serif;
   }
 `;
 
@@ -29,14 +29,13 @@ export const SendButton = styled.button`
   padding: 5px;
   border-radius: 50%;
   border: #202540;
-  background-color:#00FFEA ;
-  color:  #202540 ;
+  background-color: #00ffea;
+  color: #202540;
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #00FFEA;
-    box-shadow: 1px 1px 6px 2px #40B8BD;
-    
+    background-color: #00ffea;
+    box-shadow: 1px 1px 6px 2px #40b8bd;
   }
 `;
